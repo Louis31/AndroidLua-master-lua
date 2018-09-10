@@ -1,0 +1,62 @@
+[{
+  "cmd": "ime set sk.kottman.androlua/com.android.adbkeyboard.AdbIME",
+  "delay": 3000
+}
+,{
+  "cmd":"am force-stop me.veryyoung.wechat.luckymoney",
+  "delay":2000
+},{
+  "cmd":"am start -n me.veryyoung.wechat.luckymoney/.MainActivity  --es tel '18613141314' --ei nht 1 --ei ty 0  ",
+  "delay":2000
+},{"cmd":"am force-stop com.tencent.mm",
+  "delay":5000
+},{
+  "cmd":"pm clear com.tencent.mm",
+  "delay": 5000
+}
+,{
+  "cmd": "input tap 680 280",
+  "delay": 10000
+},
+ {
+  "cmd": "input keyevent 4",
+  "delay": 5000
+},{
+  "cmd": "am start -n com.tencent.mm/.ui.LauncherUI",
+  "delay": 5000
+},{
+  "cmd": "input tap 600 1200",
+  "delay": 10000
+},{
+  "cmd": "input tap 216 384",
+  "delay": 5000
+},{
+  "cmd": "am broadcast -a ADB_INPUT_TEXT --es msg '18000000000'",
+  "delay": 3000
+},
+  {
+    "cmd": "input tap 217 577",
+    "delay": 3000
+  },
+  {
+    "cmd": "am broadcast -a ADB_INPUT_TEXT --es msg 18613141314",
+    "delay": 3000
+  },
+  {
+    "cmd": "input tap 217 675",
+    "delay": 6000
+  },
+  {
+    "cmd": "am broadcast -a ADB_INPUT_TEXT --es msg mmabbcj1314",
+    "delay": 3000
+  },
+  {
+    "cmd": "input tap 24 808",
+    "delay": 3000
+  }
+, {
+  "cmd": "ime set com.baidu.input_mi/.ImeService",
+  "delay": 3000
+}
+  //
+]

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_deep"
+    android:orientation="vertical"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:text="192.168.3.19"
+                android:hint="同WiFi网络下的电脑ip 例 192.168.1.1"
+                android:id="@+id/main_ip_set_et" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="连接"
+                android:id="@+id/main_ip_set_bt"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="执行脚本"
+                android:id="@+id/main_jiaoben"/>
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="新机器"
+                android:id="@+id/main_auto_device"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:text=""
+                android:hint="注册手机号"
+                android:inputType="phone"
+                android:id="@+id/main_shouji" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:text="5"
+                android:hint="类型(0 默认，1 新)"
+                android:inputType="number"
+                android:id="@+id/main_1" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:text="是否开启自动注册"
+                android:id="@+id/main_auto_next"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:text="是否开启自动滑动"
+                android:id="@+id/main_auto_hua"
+                android:checked="false"
+                />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:text="是否开启自动发朋友圈"
+                android:id="@+id/main_auto_timeline"
+                android:checked="false"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="注册"
+                android:id="@+id/main_auto_reg"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="注册(非自动滑块)"
+                android:id="@+id/main_no_hua_reg"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

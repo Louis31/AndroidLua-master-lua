@@ -1,0 +1,20 @@
+[
+  {
+    "cmd": "ime set com.android.adbkeyboard/.AdbIME",
+    "delay": 3000
+  }, {"cmd":"input tap 48 152",
+    "delay":5000
+  },
+  {"cmd":"am broadcast -a ADB_INPUT_TEXT --es msg 1212",
+    "delay":5000
+  },
+  {"cmd":"input tap 610 60",
+    "delay":5000
+  }, {
+  "cmd": "ime set com.baidu.input_mi/.ImeService",
+  "delay": 3000
+},{
+  "cmd":"am broadcast -a com.wechat.autonext.reg.broadcast --ei auto 0",
+  "delay":1500
+  }
+]

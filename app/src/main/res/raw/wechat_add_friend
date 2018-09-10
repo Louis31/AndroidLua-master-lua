@@ -1,0 +1,29 @@
+[
+  {
+  "cmd": "ime set com.android.adbkeyboard/.AdbIME",
+  "delay": 3000
+},{"cmd":"input tap 628 74",
+    "delay":5000
+  },
+  {"cmd":"input tap 628 270",
+    "delay":2000
+  },
+  {"cmd":"input tap 32 210",
+    "delay":5000
+  },
+  {"cmd":"am broadcast -a ADB_INPUT_TEXT --es msg 'cyt87016820'",
+    "delay":5000
+  },
+  {"cmd":"input tap 142 187",
+    "delay":15000
+  },
+  {"cmd":"input tap 32 671",
+    "delay":15000
+  },
+  {"cmd":"input tap 600 50",
+    "delay":12000
+  }, {
+  "cmd": "ime set com.baidu.input_mi/.ImeService",
+  "delay": 3000
+  }
+]

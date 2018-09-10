@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+
+	<GridLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:alignmentMode="alignBounds"
+		android:columnCount="2"
+ 		android:padding="5dp" >
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="50dp"
+ 			android:gravity="center_vertical"
+			android:text="@string/server" />
+
+		<EditText
+			android:id="@+id/server"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:singleLine="true" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="50dp"
+			android:gravity="center_vertical"
+			android:text="@string/user_name" />
+
+		<EditText
+			android:id="@+id/username"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:singleLine="true" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="50dp"
+			android:gravity="center_vertical"
+			android:text="密码" />
+
+		<EditText
+			android:id="@+id/password"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:inputType="textPassword"
+			android:singleLine="true" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="50dp"
+			android:gravity="center_vertical"
+			android:text="@string/dns1" />
+
+		<EditText
+			android:id="@+id/dns1"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:singleLine="true" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="50dp"
+			android:gravity="center_vertical"
+			android:text="@string/dns2" />
+
+		<EditText
+			android:id="@+id/dns2"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:singleLine="true" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="50dp"
+			android:gravity="center_vertical"
+			android:text="@string/mppe" />
+
+		<CheckBox
+			android:id="@+id/mppe"
+			android:layout_width="wrap_content"
+			android:layout_height="50dp" />
+    </GridLayout>
+
+</ScrollView>
